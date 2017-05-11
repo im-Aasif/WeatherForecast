@@ -1,0 +1,10 @@
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h4 class="panel-title"> {{ convertDate({object: weatherObject}) | date: 'd MMM, yyyy'}} </h4>
+    </div>
+    <div class="panel-body">
+        Morning Temperature: {{ weatherObject.temp.morn }} &#8451;<br />
+        Evening Temperature: {{ weatherObject.temp.eve }} &#8451;<br />
+        Night Temperature: {{ weatherObject.temp.night }} &#8451;<br />
+    </div>
+</div>
